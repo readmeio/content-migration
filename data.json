@@ -1,0 +1,10 @@
+[
+  {
+    "newSlug": "migration-test",
+    "oldSlug": "migration-test"
+  },
+  {
+    "newSlug": "migration-test-again",
+    "oldSlug": "migration-test"
+  }
+]

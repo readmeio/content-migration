@@ -1,0 +1,32 @@
+{
+  "name": "content-migration",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "create": "ts-node create.ts",
+    "dry": "DRY_RUN=true ts-node migrate.ts",
+    "lint": "eslint . --ext ts && prettier . -c",
+    "migrate": "ts-node migrate.ts",
+    "test": "npm run lint && npm run build"
+  },
+  "engines": {
+    "node": "^16"
+  },
+  "author": "ReadMe",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "@readme/eslint-config": "^10.1.1",
+    "@types/node": "^18.11.17",
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "prettier": "@readme/eslint-config/prettier"
+}
